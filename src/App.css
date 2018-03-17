@@ -33,27 +33,65 @@
 }
 
 body{
-  background-color:rgb(44, 49, 69);
+ 
+  min-width: 100%;
+  min-height: 900px;
+  margin:0;
+  padding:0;
 }
-.navbar  {
-  background-color: transparent;
-}
+
  h1 { 
+  
   color: white;
   font-size: 8em;
   margin-top:5%; 
 }
-a{
-  color: rgb(255, 255, 255);
-  font-style: bold
+
+/* this is the root div where we will render our App */
+#root{
+  min-height: 1000px;
+  margin:0 !important;
+  padding:0 !important;
 }
-.navbar li{
-  margin-left: 15%;
+/* contains navbar and Big Title  */
+#headerContainer{
+  min-height: 500px;
+margin:0;
+padding: 10px 50px;
+  background-color:rgb(44, 49, 69);
 }
-.navbar li a{
-  color: rgb(204, 204, 204);
+#SearchEmployees{
+ 
+  background-color: rgb(228, 18, 105);
+  margin-top:-140px;
+  min-height: 200px;
+  padding-top:10px ;
+}
+#searcharea{
+  background-color: rgb(255, 255, 255);
+  min-height: 80px;
+}
+.col-center{
+  float:none;
+  margin: auto;
 }
 
-.nav-link:hover,a:hover{
-  color: rgb(255, 255, 255);
+/* Header Style  */
+.navbar{
+  
+      background-color: transparent;
+      border-style: none;
+  } 
+  
+ul.nav li a, ul.nav li a:visited {
+    color:rgb(206, 202, 202) !important;
 }
+ul.nav li a:hover {
+  color: rgb(238, 235, 235) !important;
+}
+.navbar-brand{
+  color:white !important;
+}
+
+/* End Header.js Style  */
+
