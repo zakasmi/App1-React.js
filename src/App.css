@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+ 
 }
 
 .App-logo {
@@ -14,6 +15,8 @@
   color: white;
 }
 
+
+/*button rgb(240, 90, 51)*/
 .App-title {
   font-size: 1.5em;
 }
@@ -22,7 +25,35 @@
   font-size: large;
 }
 
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+body{
+  background-color:rgb(44, 49, 69);
+}
+.navbar  {
+  background-color: transparent;
+}
+ h1 { 
+  color: white;
+  font-size: 8em;
+  margin-top:5%; 
+}
+a{
+  color: rgb(255, 255, 255);
+  font-style: bold
+}
+.navbar li{
+  margin-left: 15%;
+}
+.navbar li a{
+  color: rgb(204, 204, 204);
+}
+
+.nav-link:hover,a:hover{
+  color: rgb(255, 255, 255);
 }
