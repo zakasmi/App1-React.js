@@ -9,8 +9,6 @@ return (
       <a class="navbar-brand" href="#">SanadTech</a>
     </div>
 
-
-   
       <ul class="nav navbar-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>

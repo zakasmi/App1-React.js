@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {SanadNavbar} from "./sanad-componenets/SanadNavbar";
+import { SearchSection } from './sanad-componenets/SearchSection';
 
 class App extends Component {
   render() {
@@ -14,20 +15,12 @@ class App extends Component {
             </div>
 
             <div className="row " >
-                <div className="col-xs-10 col-center" >
+                <div className="col-xs-10 center-block" >
 
                       <div id="SearchEmployees" >
                          
-                              <div className="row center-block ">
-                                  <div className="col-xs-11 col-center" id="searcharea">
-
-                                  </div>
-                                  <div className="col-xs-11 col-center"  id="searcharea">
-
-                                  </div>
-                                  
-                              </div>
-
+                      <SearchSection/>
+                     
                           
 
                       </div>
@@ -39,5 +32,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;

@@ -62,19 +62,26 @@ padding: 10px 50px;
 }
 #SearchEmployees{
  
-  background-color: rgb(228, 18, 105);
+  background-color: rgb(99, 80, 209);
   margin-top:-140px;
-  min-height: 200px;
+  padding: 10px;
+  min-height: 400px;
   padding-top:10px ;
+  
 }
 #searcharea{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(31, 42, 58);
   min-height: 80px;
 }
-.col-center{
+.center-block{
+  float:none !important;
+}
+
+/* you can use col-center with col ex = col-md-10 to center the column */
+/* .col-center{
   float:none;
   margin: auto;
-}
+} */
 
 /* Header Style  */
 .navbar{
@@ -94,4 +101,3 @@ ul.nav li a:hover {
 }
 
 /* End Header.js Style  */
-
