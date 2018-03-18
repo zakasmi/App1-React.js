@@ -5,11 +5,12 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { SanadNavbar } from './sanad-componenets/SanadNavbar';
 import {Home} from './sanad-componenets/Home'
+import { Root } from './sanad-componenets/Root';
 class Zak extends React.Component{
     constructor(){
         super();
         this.state = {
-            homeLink : "in Zak",
+            homeLink : "in Zffak",
             homeMounted:true
         }
     }
@@ -20,6 +21,9 @@ class Zak extends React.Component{
         });
 
     }
+    componentDidUpdate(){
+       // console.log(this.state.homeLink)
+    }
     onChangeHomeMounted(){
         this.setState({
             homeMounted:!this.state.homeMounted
@@ -28,7 +32,8 @@ class Zak extends React.Component{
     onGreat(){
         alert("Hello");
     }
-    render(){
+
+render(){
 var user ={
     firstName:"Zakaria",
     lastName:"kasmi",
@@ -47,34 +52,46 @@ if(this.state.homeMounted){
               />
 }
     return (
-        <div className="container" >
-                <div className="row">
+         <div className="container-fluid" >
+              
+
+              <div className="row center-block">
                 <div className="col-md-8 col-md-offset-2">
-                        <SanadNavbar homeLink={this.state.homeLink}/>
+              <SanadNavbar homeLink={this.state.homeLink}/>
+               <p>{this.state.homeLink} </p>
+               <Root homeLink={this.state.homeLink}/>
+
+                 <p>Hello I am A Child component form Indexjs </p>
+                </div>
                 </div>
                 
-                </div>
 
-                <div className="row">
+              
+
+               <div className="row">
                 <div className="col-md-8 col-md-offset-2">
                    {homeCmp}
                 </div>
                 
-                </div>
-                <div className="row">
-                <div className="col-md-8 col-md-offset-2">
-                  <button className="btn btn-primary" onClick={this.onChangeHomeMounted.bind(this)}>(Unmount) Home</button>
-                </div>
+                  </div>
+                         <div className="row">
+                        <div className="col-md-8 col-md-offset-2">
+                                 <button className="btn btn-primary" onClick={this.onChangeHomeMounted.bind(this)}>(Unmount) Home</button>
+                         </div>
                 
-                </div>
-        </div>
+                  </div>  
+           </div>
+               
+
+
+               
 
         )
     }
 }
 
 ReactDOM.render(
-<Zak/>
+<App/>
 , document.getElementById('root'));
 
 registerServiceWorker();

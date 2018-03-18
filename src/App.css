@@ -86,8 +86,8 @@ padding: 10px 50px;
 /* Header Style  */
 .navbar{
   
-      background-color: transparent;
-      border-style: none;
+      /* background-color: transparent;
+      border-style: none; */
   } 
   
 ul.nav li a, ul.nav li a:visited {

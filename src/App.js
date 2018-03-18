@@ -1,34 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-import {SanadNavbar} from "./sanad-componenets/SanadNavbar";
+
+
+import { Root } from './sanad-componenets/Root';
+import { Pricing } from './sanad-componenets/Pricing';
+import { User } from './sanad-componenets/User';
+import { Header } from './sanad-componenets/Header';
+import { SanadNavbar } from './sanad-componenets/SanadNavbar';
 import { SearchSection } from './sanad-componenets/SearchSection';
+
 
 class App extends Component {
   render() {
     return(
-     <div className="container-fluid text-center" id="root" >
-     
-            <div id="headerContainer">
-              <SanadNavbar/>
-               <h1>SanadTech</h1>          
-            </div>
+  
+      <Router >
+             <div>
+                    <Route  path="/" component={Header}/>
+                    <Route path="/user" component={User}/>
+                    <Route path="/pricing" component={Pricing}>
+                    <Route path="/user" component={User}/>
+                          <Route path="/SearchSection" component={SearchSection}/>
+                          <Route path="/Root" component={Root}/>
 
-            <div className="row " >
-                <div className="col-xs-10 center-block" >
+                    </Route>
 
-                      <div id="SearchEmployees" >
-                         
-                      <SearchSection/>
-                     
-                          
-
-                      </div>
-
-                </div>
+            </div>            
            
-            </div>
-     </div>
+      
+      </Router>
+
+    
+    // <Root>
+    //       <Pricing/>
+    // </Root>
     );
   }
 }
