@@ -7,7 +7,7 @@ return (
 
     <div class="row">
   
-    <div class="col-lg-2">
+    <div class="col-lg-10 center-block">
       <div class="input-group">
         <input type="text" class="form-control" aria-label="..."/>
         <div class="input-group-btn">
