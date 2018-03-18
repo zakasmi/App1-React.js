@@ -1,6 +1,18 @@
 import React from "react";
 
 export class SanadNavbar extends React.Component{
+  componentDidMount(){
+    this.fetchData();
+  }
+fetchData(){
+  fetch("http://sanadtech-lab.appspot.com/")
+  .then(response => response.json())
+  .then(json => {
+    console.log(json);
+ 
+  });
+}
+
 render(){
 return (
   <nav class="navbar navbar-default">

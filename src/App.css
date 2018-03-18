@@ -101,3 +101,20 @@ ul.nav li a:hover {
 }
 
 /* End Header.js Style  */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top:20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color:black
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
