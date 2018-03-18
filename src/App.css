@@ -91,10 +91,10 @@ padding: 10px 50px;
   } 
   
 ul.nav li a, ul.nav li a:visited {
-    color:rgb(206, 202, 202) !important;
+    color:rgb(143, 140, 140) !important;
 }
 ul.nav li a:hover {
-  color: rgb(238, 235, 235) !important;
+  color: rgb(90, 88, 88) !important;
 }
 .navbar-brand{
   color:white !important;
