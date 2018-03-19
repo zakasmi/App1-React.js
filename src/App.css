@@ -62,12 +62,13 @@ padding: 10px 50px;
 }
 #SearchEmployees{
  
-  background-color: rgb(99, 80, 209);
+  background-color: rgb(255, 255, 255);
   margin-top:-140px;
   padding: 10px;
   min-height: 400px;
   padding-top:10px ;
-  
+ 
+  margin-bottom: 20px;
 }
 #searcharea{
   background-color: rgb(31, 42, 58);
@@ -78,10 +79,10 @@ padding: 10px 50px;
 }
 
 /* you can use col-center with col ex = col-md-10 to center the column */
-/* .col-center{
+.col-center{
   float:none;
   margin: auto;
-} */
+}
 
 /* Header Style  */
 .navbar{
@@ -101,20 +102,44 @@ ul.nav li a:hover {
 }
 
 /* End Header.js Style  */
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  margin-top:20px;
+table{
+margin-top:10px;
 }
+th{
+  text-align:center
+  
+  }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  color:black
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+  .effect6
+  {
+      position:relative;
+      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+              box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  }
+  .effect6:before, .effect6:after
+  {
+      content:"";
+      position:absolute;
+      z-index:-1;
+      -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+      -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      top:50%;
+      bottom:0;
+      left:10px;
+      right:10px;
+      -moz-border-radius:100px / 10px;
+      border-radius:100px / 10px;
+  }
+  .effect6:after
+  {
+      right:10px;
+      left:auto;
+      -webkit-transform:skew(8deg) rotate(3deg);
+         -moz-transform:skew(8deg) rotate(3deg);
+          -ms-transform:skew(8deg) rotate(3deg);
+           -o-transform:skew(8deg) rotate(3deg);
+              transform:skew(8deg) rotate(3deg);
+  }
+  
